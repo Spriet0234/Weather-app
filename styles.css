@@ -1,0 +1,22 @@
+body{
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+#title{
+    text-align: center ;
+    padding-bottom: 20px;
+    margin-bottom: 100px;
+    border-bottom: 1px solid #ccc;
+}
+#btn{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: aquamarine;
+    border-radius: 20px;
+    border-width: 0px;
+    padding: 6px 9px 6px 9px
+}
+.button-cont{
+    border-bottom: 1px solid #ccc;
+}
