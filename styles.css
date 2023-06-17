@@ -1,22 +1,87 @@
-body{
-    text-align: center;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+body {
+  text-align: center;
+  font-family: "Montserrat";
+  font-weight: 400;
 }
 
-#title{
-    text-align: center ;
-    padding-bottom: 20px;
-    margin-bottom: 100px;
-    border-bottom: 1px solid #ccc;
+#title {
+  text-align: center;
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #ccc;
+  font-weight: 400;
 }
-#btn{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    background-color: aquamarine;
-    border-radius: 20px;
-    border-width: 0px;
-    padding: 6px 9px 6px 9px
+h4 {
+  font-weight: 400;
 }
-.button-cont{
-    border-bottom: 1px solid #ccc;
+h3 {
+  font-weight: 400;
+}
+#textbox {
+  border: none;
+  appearance: none;
+  background: #5f87b8;
+  color: white;
+  padding: 12px;
+  border-radius: 3px;
+  width: 250px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+#textbox::placeholder {
+  color: white;
+}
+#textbox:focus {
+  outline: none;
+  border: none;
+  appearance: none;
+}
+#btn {
+  display: inline-block;
+  outline: 0;
+  cursor: pointer;
+  text-align: center;
+  border: 0;
+  padding: 7px 16px;
+  min-height: 36px;
+  min-width: 36px;
+  color: #ffffff;
+  background: #008060;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 0px 0px,
+    rgba(0, 0, 0, 0.2) 0px -1px 0px 0px inset;
+}
+#btn:hover {
+  background: #006e52;
+}
+#button-cont {
+  border-bottom: 1px solid #ccc;
+}
+
+#temp-cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#temp-cont h3 {
+  flex-grow: 0;
+}
+#temp1 {
+  margin-right: 30px;
+  font-size: 25px;
+}
+#temp2 {
+  margin-left: 30px;
+  font-size: 25px;
+}
+#city {
+  font-size: 22px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+#location-container {
+  display: flex;
+  justify-content: center;
 }

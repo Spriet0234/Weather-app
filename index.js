@@ -1,12 +1,17 @@
 const btn = document.querySelector("#btn");
-const temp1 = document.getElementById("temp");
+const temp1 = document.getElementById("temp1");
 const temp2 = document.getElementById("temp2");
-const text = document.getElementById("textbox");
+const input = document.getElementById("textbox");
+const cityText = document.getElementById("city");
+const image = document.getElementById("image");
+const condition = document.getElementById("condition");
 
 console.log(btn);
-btn.addEventListener("click", () => {
-  fetchApi(text.value);
-  console.log("a");
+input.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    fetchApi(input.value);
+    console.log("a");
+  }
 });
 
 var obj;
@@ -20,6 +25,11 @@ const fetchApi = (a) => {
     .then((data) => {
       console.log(data);
       console.log(data.current);
-      temp1.innerHTML = data.current.temp_f;
+      temp1.innerHTML = `${data.current.temp_f} F`;
+      temp2.innerHTML = `${data.current.temp_c} C`;
+      cityText.innerHTML = `${data.location.name}, ${data.location.region}`;
+      console.log(data.current.condition.icon);
+      image.src = data.current.condition.icon;
+      condition.innerHTML = data.current.condition.text;
     });
 };
