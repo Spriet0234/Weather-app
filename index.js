@@ -5,6 +5,7 @@ const input = document.getElementById("textbox");
 const cityText = document.getElementById("city");
 const image = document.getElementById("image");
 const condition = document.getElementById("condition");
+const wind = document.getElementById("wind");
 
 const successCallback = (position) => {
   console.log(position);
@@ -60,5 +61,6 @@ const fetchApi = (a) => {
       console.log(data.current.condition.icon);
       image.src = data.current.condition.icon;
       condition.innerHTML = data.current.condition.text;
+      wind.innerHTML = `${data.current.wind_mph} mph winds`;
     });
 };
